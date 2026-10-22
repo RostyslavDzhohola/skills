@@ -1,0 +1,15 @@
+{
+  "name": "rostyslav-skills",
+  "version": "0.1.0",
+  "description": "Rostyslav Dzhohola's agent skills. Starts with /catch-up: get back into a thread you've been away from.",
+  "author": {
+    "name": "Rostyslav Dzhohola",
+    "url": "https://github.com/RostyslavDzhohola"
+  },
+  "repository": "https://github.com/RostyslavDzhohola/skills",
+  "license": "MIT",
+  "keywords": ["skills", "productivity", "t3-code", "catch-up"],
+  "skills": [
+    "./skills/productivity/catch-up"
+  ]
+}

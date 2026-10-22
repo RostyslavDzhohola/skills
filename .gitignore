@@ -1,0 +1,3 @@
+.DS_Store
+# Local run logs written next to a skill; personal, never published.
+skills/**/verdicts.md

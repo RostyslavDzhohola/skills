@@ -1,0 +1,17 @@
+{
+  "name": "rostyslav",
+  "owner": {
+    "name": "Rostyslav Dzhohola",
+    "url": "https://github.com/RostyslavDzhohola"
+  },
+  "description": "Rostyslav Dzhohola's skills, as an installable Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "rostyslav-skills",
+      "source": "./",
+      "description": "Rostyslav Dzhohola's agent skills, starting with /catch-up.",
+      "category": "productivity",
+      "keywords": ["skills", "productivity", "catch-up"]
+    }
+  ]
+}
