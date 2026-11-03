@@ -15,17 +15,18 @@ I've been away from this work. Get me back in without me rereading the thread.
    - **Deployments**: the latest deploy for each environment the work ships to (`gh api repos/{owner}/{repo}/deployments`, or the host's CLI), and whether it includes the work.
 
    Done when every claim about state comes from a command you ran in this turn. Where a thread and the world disagree, the world wins, and you say what changed. A source you can't reach is listed as unchecked on the page, never assumed.
-4. **Write the brief** as your first message, before rendering anything: one paragraph of at most five sentences, in this order: the goal (my opening words, quoted and trimmed), where it stands, the blocker or "no blocker", the next step and who takes it, and when the thread can close. Done when I could act on it without reading further.
+4. **Write the brief** as your first message, before rendering anything: one paragraph of at most five sentences, in this order: the goal (my opening words, quoted and trimmed), where it stands, the blocker or "no blocker", the next step and who takes it, and whether it is **safe to settle** now (yes, or no and what stands in the way). Done when I could act on it without reading further.
 5. **Render the detail** with `html_render`, below the brief. The page carries the evidence behind each sentence of the brief, in cards of at most three lines each. A section with nothing to show is left out. Every status and date comes from step 3.
    - **Blocker**: the most prominent card, with who clears it (me, you, someone else).
    - **Working on**: a progress strip, each piece marked done, in flight, or not started.
    - **Next step**: the action and who takes it. If it's a decision, the options side by side with your pick marked.
-   - **To close the loop**: the verdict (met, partly met, not met), then only the open items, each with its owner; done items collapse into a count ("4 of 6 done"). Goal met: the open items are what still stands in the way of a safe close (unmerged or undeployed work, uncommitted changes, running jobs or child tasks, a worktree to remove, a sibling thread still waiting). Goal not met: each undone piece of the original goal, as a concrete task.
+   - **Safe to settle**: yes or no, big, at the top of the card. Safe means settling now loses or strands nothing: no uncommitted or unpushed work, nothing unmerged or undeployed that should ship, no running jobs or child tasks, no worktree left to remove, no sibling thread waiting on this one. Under it, the goal verdict (met, partly met, not met) and only the open items, each with its owner; done items collapse into a count ("4 of 6 done"). With the goal unmet, each undone piece of the original goal stays open until it's done or handed to another thread.
    - **Goal shift**: the original goal beside the current one, with when and why it changed.
    - **While you were away**: up to five events that change what I do next, each tagged with its source (sibling thread, GitHub, deployment).
    - **Unchecked**: one line naming each source you couldn't reach.
 
    Done when `html_preview` at 728 and 390 shows every card unclipped.
 6. **End with links**: one line linking each file, commit, PR and sibling thread the page names. If `html_render` is unavailable, follow the brief with the same sections as short bullets.
+7. **Ask what only I can answer**: the decisions and unknowns that block the next step or the settle, as numbered questions, each with its options and your recommended answer marked, so I can reply in one line ("1 B, 2 yes"). When it's safe to settle, the last question is "Settle this thread?"; on my yes, settle it with `t3_thread_organize`. With nothing to ask and no safe settle, say what you're waiting on.
 
-Then wait for my go before taking the next step.
+Then wait for my answers before taking the next step.

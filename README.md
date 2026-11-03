@@ -4,7 +4,7 @@ Agent skills I use every day, versioned here. Built in the style of [mattpocock/
 
 | Skill | What it does |
 |---|---|
-| [`/catch-up`](skills/productivity/catch-up/SKILL.md) | Get back into a thread you've been away from: a one-paragraph brief (goal, status, blocker, next step, when it can close), then a dashboard with the detail. Checks git, GitHub and deployments, so a stale thread can't mislead you. |
+| [`/catch-up`](skills/productivity/catch-up/SKILL.md) | Get back into a thread you've been away from: a one-paragraph brief (goal, status, blocker, next step, safe to settle or not), a dashboard with the detail, then the questions only you can answer. Checks git, GitHub and deployments, so a stale thread can't mislead you. |
 
 `/catch-up` is written for [T3 Code](https://github.com/pingdotgg/t3code): it reads sibling threads through T3's thread tools and renders its dashboard with `html_render`. In other harnesses it reads the current conversation and answers in text.
 
